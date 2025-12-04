@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentação | Ícones Huta Dev</title>
+    <meta name="author" content="Hutauta Developer (Huta Dev)" />
+    <meta
+      name="description"
+      content="Documentação completa da Biblioteca de Ícones HTML da Huta Dev, com exemplos, códigos e instruções de uso para projetos web." />
+    <meta
+      name="keywords"
+      content="HTML, ícones, símbolos, caracteres, biblioteca, documentação, web development, Huta Dev" />
+    <link rel="icon" type="image/webp" href="logo.webp" />
+
+    <link rel="stylesheet" href="src/style/global.css" />
+    <link rel="stylesheet" href="src/style/style.css" />
+
+    <!-- Meta Open Graph para redes sociais -->
+    <meta property="og:title" content="Documentação | Biblioteca de Ícones HTML" />
+    <meta
+      property="og:description"
+      content="Aprenda a utilizar os ícones da Huta Dev em seus projetos web com instruções detalhadas e exemplos práticos." />
+    <meta property="og:image" content="demo-docs.webp" />
+    <meta property="og:url" content="https://icon-hutadev.vercel.app/docs.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Meta Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Documentação | Biblioteca de Ícones HTML" />
+    <meta
+      name="twitter:description"
+      content="Instruções detalhadas para usar os ícones HTML da Huta Dev de forma rápida e prática em qualquer projeto web." />
+    <meta name="twitter:image" content="demo-docs.webp" />
+    <meta name="twitter:site" content="@HutaDev" />
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js" defer></script>
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="/">
+        <figure>
+          <img src="logo.webp" width="30" height="30" alt="Logo" />
+        </figure>
+      </a>
+
+      <nav class="desk-link">
+        <ul>
+          <li><a href="/">Ícones</a></li>
+          <li><a class="link-active" href="docs.html">Docs</a></li>
+          <li>
+            <a target="reg" href="https://www.buymeacoffee.com/heliocarlitosantonio">
+              Apoiar
+              <span class="icon">&#8599;</span>
+            </a>
+          </li>
+          <li>
+            <a href="docs.html">
+              GitHub
+              <span class="icon">&#8599;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-mobile">
+        <input type="checkbox" id="check" />
+
+        <label for="check" class="box-icon">
+          <div class="icon abrir-menu">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 8l16 0"></path>
+              <path d="M4 16l16 0"></path>
+            </svg>
+          </div>
+
+          <div class="icon fechar-menu">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6l-12 12"></path>
+              <path d="M6 6l12 12"></path>
+            </svg>
+          </div>
+        </label>
+
+        <nav class="mobile-link">
+          <ul>
+            <li><a href="/">Ícones</a></li>
+            <li><a class="link-active" href="docs.html">Docs</a></li>
+            <li>
+              <a target="reg" href="https://www.buymeacoffee.com/heliocarlitosantonio">
+                Apoiar
+                <span class="icon">&#8599;</span>
+              </a>
+            </li>
+            <li>
+              <a href="docs.html">
+                GitHub
+                <span class="icon">&#8599;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="doc-article">
+        <h1>Documentação</h1>
+
+        <p>
+          A biblioteca de ícones da Huta Dev foi criada para oferecer uma forma simples, rápida e directa de utilizar
+          símbolos em projectos web. Todos os ícones são apresentados visualmente, permitindo ao utilizador copiar o
+          respectivo código e aplicá-lo no seu projecto. Esta documentação explica como tudo funciona e como tirar o
+          melhor proveito da biblioteca.
+        </p>
+
+        <h2>1. Como os ícones funcionam</h2>
+
+        <p>
+          Cada ícone é representado através de uma
+          <strong>entidade numérica HTML</strong>
+          . Uma entidade numérica é um código especial que, ao ser colocado no HTML, é automaticamente transformado no
+          símbolo correspondente. Esta abordagem não exige ficheiros externos como CDN ou script, não utiliza SVG e não
+          acrescenta peso ao carregamento da página.
+        </p>
+
+        <p>Exemplo de entidade numérica:</p>
+
+        <code>&amp;#9728;</code>
+
+        <p>
+          Ao usar esse código no HTML, o navegador renderiza o símbolo &#9728;. Este método garante desempenho elevado,
+          compatibilidade com praticamente todos os navegadores e funcionamento estável independentemente do ambiente.
+        </p>
+
+        <h2>2. Como copiar o ícone</h2>
+
+        <p>
+          O processo de utilização é directo. O utilizador navega pela página dos
+          <a class="inline" href="/">ícones</a>
+          , escolhe o ícone clicando nele, 0 modal apresenta o símbolo e o seu código, pronto a ser cópiado e colado no
+          HTML do projecto.
+        </p>
+
+        <p>Exemplo de uso no HTML:</p>
+
+        <p class="code">
+          <span class="tag">&lt;button&gt;</span>
+          &amp;#9728;
+          <span class="tag">&lt;/button&gt;</span>
+        </p>
+
+        <p>Resultado:</p>
+
+        <button class="resultado-btn">&#9728;</button>
+
+        <p>
+          Ao colar este código, o símbolo aparecerá imediatamente na página, sem a necessidade de qualquer recurso
+          adicional.
+        </p>
+
+        <h2>3. Vantagens de utilizar entidades numéricas</h2>
+
+        <p>A biblioteca foi construída com entidades numéricas por várias razões práticas:</p>
+
+        <ul>
+          <li>Carregamento extremamente rápido;</li>
+          <li>Compatibilidade universal com HTML;</li>
+          <li>Dispensa de ficheiros SVG ou dependências externas;</li>
+          <li>Integração simples com qualquer estilo ou componente;</li>
+          <li>Ideal para projectos leves, rápidos e optimizados.</li>
+        </ul>
+      </article>
+    </main>
+
+    <button class="go-to-top">
+      <div class="icon">&#129105;</div>
+    </button>
+
+    <footer class="footer">
+      <p>
+        ©
+        <span id="anoActual"></span>
+        | Feito com &#10084; pela
+        <a href="https://hutadev.vercel.app/" target="reg">Hutauta Developer</a>
+      </p>
+    </footer>
+  </body>
+
+  <script src="src/script/app.js" defer></script>
+</html>

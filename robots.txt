@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /docs.html
+Disallow: /private/
+
+Sitemap: https://icon-hutadev.vercel.app/sitemap.xml

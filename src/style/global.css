@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fontes/FiraCode.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fontes/Outfit.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-display: swap;
+  box-sizing: border-box;
+  font-family: Outfit, "Segoe UI Symbol", "Apple Symbols", "Symbola", "Arial Unicode MS", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  font-family: Outfit, "Segoe UI Symbol", "Apple Symbols", "Symbola", "Arial Unicode MS", sans-serif;
+}
+
+::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+::-moz-selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+:root {
+  --red: #ff0040;
+  --red-transparent: #ff00401e;
+  --white: #fff;
+  --white-transparent: #ffffff1e;
+  --cinza: #404040;
+  --black: #000;
+  --dark: #171717;
+  --success: #005005;
+  --success-transparent: #0050053a;
+  --text: #949494;
+  --text-2: #bebebe;
+  --thin-border: 1px solid #ffffff1c;
+  /* Code */
+  --tag: #ff0077;
+  --code-color: #00c5cc;
+}
+
+body {
+  background-color: var(--black);
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+a,
+button,
+input,
+textarea {
+  all: unset;
+  transition: 0.3s ease;
+}
+
+a,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+p,
+li {
+  color: var(--text);
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.code,
+code,
+pre {
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  color: var(--code-color) !important;
+  background-color: var(--white-transparent);
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid var(--cinza);
+  user-select: all;
+  font-weight: 500;
+}
+
+code,
+pre {
+  margin: 10px 0 !important;
+  display: block;
+}
+
+.code span {
+  font-family: "Fira Code", monospace !important;
+}
+
+.code .tag {
+  color: var(--tag);
+}
